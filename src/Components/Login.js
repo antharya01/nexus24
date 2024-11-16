@@ -1,7 +1,6 @@
 import './Login.css';
 import React from 'react';
-import {Link} from 'react-router-dom';
-import Start from './Start.js';
+import {Link} from 'react-router-dom'
 
 const Login = () => {
   return(
