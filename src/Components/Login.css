@@ -1,0 +1,32 @@
+body{
+
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+.log {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center; 
+    height:75vh; 
+    width:50vw;
+    margin:50px;
+    margin-left: 400px;
+    background-color:rgb(31, 22, 78,0.5);
+    color: #fafcff; /* Dark text color */
+    text-align: center; /* Center text alignment */
+    padding: 20px; /* Add padding */
+    font-family: 'Arial', sans-serif; /* Set font family */
+    border-radius: 50px;
+  }
+.log button{
+    color:white;
+    background-color: rgb(3, 43, 85);
+    height:4vw;
+    width:10vw;
+    border-radius:50%;
+}

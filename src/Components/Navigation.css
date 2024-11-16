@@ -1,0 +1,109 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+   backdrop-filter: blur(10px);
+   height:5vw;
+}
+.nav {
+  color: #fff;
+  font-size: 2rem;
+  margin-left: 5vw;
+  font-family: initial; /* Ensure no hidden characters */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 6rem;
+  margin-right: 10vw;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: monospace;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  transition: 0.3s;
+}
+
+.hamburger .bar.open:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger .bar.open:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger .bar.open:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+.hamburger {
+  display: none; /* Will be shown in media query */
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex; /* Ensure this is set in the media query */
+  }
+  .nav-links {
+    display: none; /* Initially hidden */
+  }
+  .nav-links.open {
+    display: flex; /* Display when open */
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    margin-top: 100px;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    flex-direction: column;
+    align-items: center;
+    display: none; /* Ensure this ends with a semicolon */
+  }
+
+  .nav-links.open {
+    display: flex;
+    gap: 1vh; /* Ensure this ends with a semicolon */
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links li {
+    padding: 1rem 0; /* Ensure this ends with a semicolon */
+  }
+  .navbar{
+    height:9vw;
+  }
+}
+
+@media(max-width:360px) {
+  .nav{
+    font-size: 1em;
+  }
+}

@@ -1,0 +1,31 @@
+
+.rpage{
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    height:50vw; /* Height based on viewport height */
+    width: 50vw; /* Width based on viewport width */
+    margin: 6vh; /* Margin using vh and vw */
+    background-color: rgba(31, 22, 78, 0.5); /* Semi-transparent background */
+    color: #fafcff; 
+    text-align: center; 
+    padding: 5vw; /* Responsive padding */
+    font-family: 'Arial', sans-serif; 
+    border-radius: 5vw; /* Rounded corners using vw */
+    margin-left:25vw;
+  }
+  @media (max-width: 768px)
+   {
+    p{
+        font-size:1.5vw;
+    }
+    
+    .rpage {
+        margin-left:17vw; 
+        margin-top:12vw;/* Remove left margin for smaller screens */
+      height:65vw;
+        width:64vw;
+      }
+
+    }

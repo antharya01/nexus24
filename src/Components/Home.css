@@ -1,0 +1,123 @@
+body{
+
+  background-image:url(nbi2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+.home-content {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  height: 75vh; /* Height based on viewport height */
+  width: 50vw; /* Width based on viewport width */
+  margin: 5vh 5vw; /* Margin using vh and vw */
+  background-color: rgba(31, 22, 78, 0.5); /* Semi-transparent background */
+  color: #fafcff; 
+  text-align: center; 
+  padding: 5vw; /* Responsive padding */
+  font-family: 'Arial', sans-serif; 
+  border-radius: 5vw; /* Rounded corners using vw */
+  margin-left:25vw;
+}
+
+.head {
+  color: beige;
+  font-family: cursive;
+  font-weight:10; /* Use numeric value */
+  font-size:3vw; /* Font size responsive to viewport width */
+  margin-bottom: 2vh; /* Reduced space below the heading */
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.content-container {
+  margin: 2vh 0; /* Vertical margin for spacing */
+  display: flex; /* Flexbox for horizontal alignment */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  width: 100%; /* Full width */
+  gap: 5vw; /* Gap using vw */
+  width:45vw; /* Adjusted max width for tighter layout */
+}
+.home-content button {
+  padding: 2vh 10vw; /* Responsive padding */
+  border-radius: 3vw; /* Rounded corners using vw */
+  cursor: pointer;
+  border: 0;
+  display: flex; /* Flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  color: black;
+  background-color: rgba(185, 173, 173, 0.3);
+  width:2.5vw; /* Adjusted width for better appearance */
+  height:3vw; /* Height based on viewport width */
+  box-shadow: none; /* No shadow initially */
+  letter-spacing: 0.2vw; /* Letter spacing using vw */
+  text-transform: uppercase;
+  font-size: 1.5vw; /* Responsive font size */
+  transition: all 0.5s ease;
+}
+
+.home-content button:hover {
+  letter-spacing: 0.3vw; /* Increased letter spacing on hover */
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 7px 29px 0px; /* Shadow on hover */
+}
+
+.home-content button:active {
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+  transform: translateY(1vh); /* Slight translation on click */
+  transition: 100ms;
+}
+
+.home-content p {
+  font-size:1vw; /* Responsive paragraph font size */
+  margin: 2vh 0; /* Vertical margin for spacing */
+   width: 70vw; /* Limit width for readability */
+}
+
+.responsive-lottie {
+  width: 100%; /* Full width for responsiveness */
+  width:90vw; /* Maximum width for Lottie animation */
+  height: auto; /* Maintain aspect ratio */
+
+}
+
+@media (max-width: 768px) {
+  .content-container {
+    /* Stack items vertically on small screens */
+    align-items: center; /* Center items */
+  }
+
+  .home-content {
+    margin-left:20vw;
+    margin-top: 12vw;
+    height: 60vw;
+    width:60vw; /* Remove left margin for smaller screens */
+  }
+
+  button {
+    margin-bottom: 2vh; /* Add vertical margin below button */
+  }
+}
+
+@media (max-width:360px){
+  .home-content {
+    margin-left:10vw;
+    margin-top:40vw;
+    height:80vw;
+    width:80vw; /* Remove left margin for smaller screens */
+  }
+  .home-content p{
+    font-size:1.75vw;
+  }
+  .head{
+    font-size: 6vw;
+  }
+}
