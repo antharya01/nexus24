@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/nexus24/static/css/main.e2031231.css",
+    "main.js": "/nexus24/static/js/main.7fc0889f.js",
+    "static/media/nbi2.jpg": "/nexus24/static/media/nbi2.6540e84b7be4eba4b85a.jpg",
+    "index.html": "/nexus24/index.html",
+    "main.e2031231.css.map": "/nexus24/static/css/main.e2031231.css.map",
+    "main.7fc0889f.js.map": "/nexus24/static/js/main.7fc0889f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e2031231.css",
+    "static/js/main.7fc0889f.js"
+  ]
+}
